@@ -64,19 +64,19 @@ Card drawCard() {
     int randNum = rand() % 100;
 
 
-    if (randNum < 50) return cardLibrary[3];  // Goblin, 50%
+    if (randNum < 50) return cardLibrary[3];  
 
 
-    if (randNum < 75) return cardLibrary[2];  // Elf, 25%
+    if (randNum < 75) return cardLibrary[2];  
 
 
-    if (randNum < 90) return cardLibrary[1];  // Knight, 15%
+    if (randNum < 90) return cardLibrary[1];  
 
 
-    if (randNum < 98) return cardLibrary[4];  // Fairy, 8%
+    if (randNum < 98) return cardLibrary[4]; 
 
 
-    return cardLibrary[0];  // Dragon, 2%
+    return cardLibrary[0];  
 
 
 }
@@ -99,7 +99,7 @@ int main() {
     srand(time(NULL));
     char choice;
     printf("Welcome to the Card Draw Game!n");
-    //loadCardData();
+    
     do {
 
         printf("單抽選'd'   10抽選't'    退出選'q' :");
@@ -112,7 +112,7 @@ int main() {
             
             counter(&count);
 
-            //saveCardData(drawnCard);
+            
         }
        else if(choice == 't'){
            
